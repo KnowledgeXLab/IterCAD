@@ -1,0 +1,39 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python and tooling caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Training, evaluation, and experiment outputs
+output/
+results_*/
+wandb/
+runs/
+*.log
+events.out.tfevents.*
+
+# Temporary CAD/render artifacts
+*.tmp
+*.temp
+/tmp/
+
+# Data and model artifacts are published separately on Hugging Face
+/data/
+/IterCAD_data/
+/model/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
